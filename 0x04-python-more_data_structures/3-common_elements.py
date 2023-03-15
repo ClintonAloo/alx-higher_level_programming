@@ -4,5 +4,5 @@ def common_elements(set_1, set_2):
     set_2 = set()
 
     common_elements = set1.intersection(set2)
-    print(common_elements)
+    return(common_elements)
 
