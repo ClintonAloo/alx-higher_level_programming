@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-def uniq_add(my_list=[]):
-    sum = 0
-    tmp = set(my_list)
-    for i in tmp:
-        sum += i
-    return sum
-
+def new_in_list(my_list, idx, element):
+    if idx < 0 or idx >= len(my_list):
+        return my_list.copy()
+    else:
+        new_list = my_list.copy()
+        new_list[idx] = element
+        return new_list
